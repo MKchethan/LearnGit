@@ -14,6 +14,7 @@ pip install -r requirements.txt
 
 
 **Learn Git**
+
 For initialising git
 ```bash
 git init
@@ -66,6 +67,47 @@ cd d:\cmk\gitForClone
 d:
 d:\gitForClone>git clone https://github.com/MKchethan/LearnGit.git
 ```
+
+To restore
+```bash
+git restore --staged "New File.txt"
+--- or
+git reset "New File.txt"
+```
+
+To know difference of what is changed but not staged
+```bash
+git diff
+```
+
+To know difference of what is staged but not commited
+```bash
+git diff --staged
+```
+
+To create new branch with name developer in our local repository
+```bash
+git branch developer 
+```
+
+To get switched to new branch
+```bash
+git checkout developer
+```
+
+To merge the specified branch history into the main branch 
+```bash
+git checkout main
+git merge developer
+git push origin main
+```
+
+To see all the commits and the last three commits 
+```bash
+git log
+git log -p -3
+```
+
 
 
 
